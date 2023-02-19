@@ -15,8 +15,8 @@
     "contracts"
   ],
   "dependencies": {
-    "@foxswap/lib": "1.0.0",
-    "@foxswap/core": "1.0.0"
+    "@oneverseswap/lib": "1.0.0",
+    "@oneverseswap/core": "1.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
