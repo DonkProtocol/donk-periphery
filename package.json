@@ -1,5 +1,5 @@
 {
-  "name": "@oneverseswap/periphery",
+  "name": "@oneversesswap/periphery",
   "version": "1.0.0",
   "description": "🎚 Peripheral smart contracts for interacting with the ONEVERSE exchanges",
   "engines": {
@@ -8,15 +8,15 @@
   "homepage": "https://oneverse.one/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/willcordeiro/oneverseswap-periphery"
+    "url": "git+https://github.com/willcordeiro/oneverseswap-periphery.git"
   },
   "files": [
     "build",
     "contracts"
   ],
   "dependencies": {
-    "@oneverseswap/lib": "1.0.0",
-    "@oneverseswap/core": "1.0.0"
+    "@foxswap/lib": "1.0.0",
+    "@foxswap/core": "1.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
@@ -44,5 +44,13 @@
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/willcordeiro/oneverseswap-periphery/issues"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "willverse"
 }
