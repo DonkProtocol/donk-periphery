@@ -1,6 +1,6 @@
 {
   "name": "@oneverseswap/peripheryy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🎚 Peripheral smart contracts for interacting with the ONEVERSE exchanges",
   "engines": {
     "node": ">=10"
@@ -15,8 +15,8 @@
     "contracts"
   ],
   "dependencies": {
-    "@oneverseswap/lib": "1.0.1",
-    "@oneverseswap/core": "1.0.2"
+    "@oneverseswap/core": "1.0.2",
+    "@oneverseswap/lib": "1.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
