@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.6.12;
 
-import '@foxswap/core/contracts/interfaces/IUniswapV2Callee.sol';
+import '@oneverswap/core/contracts/interfaces/IUniswapV2Callee.sol';
 
 import '../libraries/UniswapV2Library.sol';
 import '../interfaces/V1/IUniswapV1Factory.sol';
