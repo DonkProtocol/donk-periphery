@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.6.12;
 
-import '@oneverswap/core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@oneverswap/core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@oneverswap/lib/contracts/libraries/FixedPoint.sol';
+import '@oneverseswap/core/contracts/interfaces/IUniswapV2Factory.sol';
+import '@oneverseswap/core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@oneverseswap/lib/contracts/libraries/FixedPoint.sol';
 
 import '../libraries/UniswapV2OracleLibrary.sol';
 import '../libraries/UniswapV2Library.sol';
