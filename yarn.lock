@@ -213,10 +213,10 @@
     "@ethersproject/properties" "^5.0.7"
     "@ethersproject/strings" "^5.0.8"
 
-"@oneverseswap/core@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@oneverseswap/core/-/core-1.0.2.tgz#bf642a1280a27e4e3a0a274e1744b005e56aa284"
-  integrity sha512-dlftgquAGrwW2KV74S3pQQgSHL16+wKkiTZRHq2O61dKGHOqKvcPjLxY+TS5hizrOC9wML7tZNF9ahLJg07HCA==
+"@oneverseswap/core@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@oneverseswap/core/-/core-1.0.3.tgz#ef57925e7c44f1013467cedde228d551fbf1b1c0"
+  integrity sha512-e38h6Q7F/YK5SvvpbLCpSp22UcYJhKFcj12xGhJxxDLlAAYWw3mKrMqPI5k6LhaWBuK9/fOQ2l0R16VahHNgXQ==
 
 "@oneverseswap/lib@1.0.1":
   version "1.0.1"
