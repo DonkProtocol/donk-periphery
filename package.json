@@ -15,7 +15,7 @@
     "contracts"
   ],
   "dependencies": {
-    "@oneverseswap/core": "1.0.2",
+    "@oneverseswap/core": "1.0.3",
     "@oneverseswap/lib": "1.0.1"
   },
   "devDependencies": {
