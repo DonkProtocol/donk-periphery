@@ -998,7 +998,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
@@ -1077,11 +1077,11 @@
 			]
 		},
 		"contracts/libraries/UniswapV2Library.sol": {
-			"keccak256": "0x971f2fb902d2b048cb967a6bac86e24ce96760fc15e8b244ef221f80c4b75822",
+			"keccak256": "0x5d666060cbb483fc06006f4b848dfac87b9ae1c2cbac93f40fcb3b11fec91610",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7f12c18f1824709f6a84d3a7c617c90118acefbd10a9e7013ff37b1e5cbaea55",
-				"dweb:/ipfs/QmWucYP4ivraXVxhzFxVJBmF1799hmhAGpzVN9j1AK9jSc"
+				"bzz-raw://ee1f745cdfd8885f7d5f6ab1d15f3bff6ea448f5750f504ada083fdaa228c37d",
+				"dweb:/ipfs/QmNp1AZDLkKTDHmyJ3KG8f561NTKZJaJNHhNpZccBaqGS4"
 			]
 		}
 	},
