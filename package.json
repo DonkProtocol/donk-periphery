@@ -1,14 +1,13 @@
 {
-  "name": "@oneverseswap/peripheryy",
-  "version": "1.0.5",
-  "description": "🎚 Peripheral smart contracts for interacting with the ONEVERSE exchanges",
+  "name": "@donk/peripheryy",
+  "version": "1.0.0",
+  "description": "🎚 Peripheral smart contracts for interacting with the DONK exchanges",
   "engines": {
     "node": ">=10"
   },
-  "homepage": "https://oneverse.one/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willcordeiro/oneverseswap-periphery.git"
+    "url": "git+https://github.com/DonkSolana/donk-periphery.git"
   },
   "files": [
     "build",
