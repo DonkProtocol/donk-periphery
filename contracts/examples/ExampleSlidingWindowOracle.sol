@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.6.12;
 
-import '@oneverseswap/core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@oneverseswap/core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@oneverseswap/lib/contracts/libraries/FixedPoint.sol';
+import '@donkswap/core/contracts/interfaces/IUniswapV2Factory.sol';
+import '@donkswap/core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@donkswap/lib/contracts/libraries/FixedPoint.sol';
 
 import '../libraries/SafeMath.sol';
 import '../libraries/UniswapV2Library.sol';
@@ -82,7 +82,7 @@ contract ExampleSlidingWindowOracle {
         // we only want to commit updates once per period (i.e. windowSize / granularity)
         uint timeElapsed = block.timestamp - observation.timestamp;
         if (timeElapsed > periodSize) {
-            (uint price0Cumulative, uint price1Cumulative,) = UniswapV2OracleLibrary.currentCumulativePrices(pair);
+            (uint price0Cumulative, uint price1Cumulative, ) = UniswapV2OracleLibrary.currentCumulativePrices(pair);
             observation.timestamp = block.timestamp;
             observation.price0Cumulative = price0Cumulative;
             observation.price1Cumulative = price1Cumulative;
@@ -92,8 +92,10 @@ contract ExampleSlidingWindowOracle {
     // given the cumulative prices of the start and end of a period, and the length of the period, compute the average
     // price in terms of how much amount out is received for the amount in
     function computeAmountOut(
-        uint priceCumulativeStart, uint priceCumulativeEnd,
-        uint timeElapsed, uint amountIn
+        uint priceCumulativeStart,
+        uint priceCumulativeEnd,
+        uint timeElapsed,
+        uint amountIn
     ) private pure returns (uint amountOut) {
         // overflow is desired.
         FixedPoint.uq112x112 memory priceAverage = FixedPoint.uq112x112(
@@ -114,8 +116,8 @@ contract ExampleSlidingWindowOracle {
         // should never happen.
         require(timeElapsed >= windowSize - periodSize * 2, 'SlidingWindowOracle: UNEXPECTED_TIME_ELAPSED');
 
-        (uint price0Cumulative, uint price1Cumulative,) = UniswapV2OracleLibrary.currentCumulativePrices(pair);
-        (address token0,) = UniswapV2Library.sortTokens(tokenIn, tokenOut);
+        (uint price0Cumulative, uint price1Cumulative, ) = UniswapV2OracleLibrary.currentCumulativePrices(pair);
+        (address token0, ) = UniswapV2Library.sortTokens(tokenIn, tokenOut);
 
         if (token0 == tokenIn) {
             return computeAmountOut(firstObservation.price0Cumulative, price0Cumulative, timeElapsed, amountIn);
