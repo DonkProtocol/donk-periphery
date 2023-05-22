@@ -1,5 +1,5 @@
 {
-  "name": "@donk/peripheryy",
+  "name": "@donkswap/periphery",
   "version": "1.0.0",
   "description": "🎚 Peripheral smart contracts for interacting with the DONK exchanges",
   "engines": {
@@ -14,8 +14,8 @@
     "contracts"
   ],
   "dependencies": {
-    "@oneverseswap/core": "1.0.3",
-    "@oneverseswap/lib": "1.0.1"
+    "@donkswap/core": "1.0.0",
+    "@donkswap/lib": "1.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
