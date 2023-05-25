@@ -434,50 +434,6 @@
 						"internalType": "uint256",
 						"name": "deadline",
 						"type": "uint256"
-					}
-				],
-				"name": "removeLiquidityETHSupportingFeeOnTransferTokens",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "amountETH",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "token",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "liquidity",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountTokenMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountETHMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
 					},
 					{
 						"internalType": "bool",
@@ -507,70 +463,6 @@
 						"name": "amountToken",
 						"type": "uint256"
 					},
-					{
-						"internalType": "uint256",
-						"name": "amountETH",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "token",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "liquidity",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountTokenMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountETHMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "approveMax",
-						"type": "bool"
-					},
-					{
-						"internalType": "uint8",
-						"name": "v",
-						"type": "uint8"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "r",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "s",
-						"type": "bytes32"
-					}
-				],
-				"name": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens",
-				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "amountETH",
@@ -726,34 +618,6 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "amountOutMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address[]",
-						"name": "path",
-						"type": "address[]"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
-					}
-				],
-				"name": "swapExactETHForTokensSupportingFeeOnTransferTokens",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
 						"name": "amountIn",
 						"type": "uint256"
 					},
@@ -817,39 +681,6 @@
 						"type": "uint256"
 					}
 				],
-				"name": "swapExactTokensForETHSupportingFeeOnTransferTokens",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amountIn",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountOutMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address[]",
-						"name": "path",
-						"type": "address[]"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
-					}
-				],
 				"name": "swapExactTokensForTokens",
 				"outputs": [
 					{
@@ -858,39 +689,6 @@
 						"type": "uint256[]"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amountIn",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountOutMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address[]",
-						"name": "path",
-						"type": "address[]"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
-					}
-				],
-				"name": "swapExactTokensForTokensSupportingFeeOnTransferTokens",
-				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -990,7 +788,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"UniswapV2Router02.sol": "UniswapV2Router02"
+			"UniswapV2Router01.sol": "UniswapV2Router01"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -1028,12 +826,12 @@
 				"dweb:/ipfs/QmRn1zFJp1n72Vykf8qTx9zWFNeZfVwmmBNe12NgZ2gCQa"
 			]
 		},
-		"UniswapV2Router02.sol": {
-			"keccak256": "0xd4cb77481b1630fdb3445c9fedbe5daa321ff7ed8f24d570ded04cf7f8b8e79a",
+		"UniswapV2Router01.sol": {
+			"keccak256": "0xa84174d569bf5f44438235046da6dbde96c7156b8db032bcbc10435a37e108e3",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7b7ad65454e87c7c73d9e0930d105408a328d0c181dca338179dfc1ed98e2538",
-				"dweb:/ipfs/QmZCof9HhURsPxEyVtM52ce4xFgfYm9voHkYxy3wAZGs5N"
+				"bzz-raw://215370175aeb3500bb193ba4a13dfb7943104e4b127b0ac04fd55d8597038269",
+				"dweb:/ipfs/QmNjmvrtBES23XADoDu9YWych5t61tdXMtQy3NZk5TgCre"
 			]
 		},
 		"interfaces/IERC20.sol": {
@@ -1050,14 +848,6 @@
 			"urls": [
 				"bzz-raw://3b6abaebd3420ed91aa09ce02e6cafd6afa789aa40cdc0d7a39b0ff3cb460238",
 				"dweb:/ipfs/QmWTmkwpaGnSsMdERGLd2rjgSBoLVjGt6NnsY53WEWo7Pn"
-			]
-		},
-		"interfaces/IUniswapV2Router02.sol": {
-			"keccak256": "0x7582c8f224f56d94f92a7510c481d10a323cfbe30558c421fe611f4e4cf18860",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://ac900003eae6287c7f54be66d9c7289145ce9d2979f853034d1dc24f8c689829",
-				"dweb:/ipfs/QmPNcDBDW8yh2JxGvm1ZugCFuzaNTNmM9KXdKLeeTFmRRi"
 			]
 		},
 		"interfaces/IWETH.sol": {
