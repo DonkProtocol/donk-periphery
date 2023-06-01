@@ -2,7 +2,7 @@
 pragma solidity =0.6.12;
 
 import '@donkswap/core/contracts/interfaces/IUniswapV2Pair.sol';
-
+import '../interfaces/IUniswapV2Router02.sol';
 import './SafeMath.sol';
 
 library UniswapV2Library {
@@ -25,7 +25,7 @@ library UniswapV2Library {
                         hex'ff',
                         factory,
                         keccak256(abi.encodePacked(token0, token1)),
-                        hex'b42f8269e826624db3a3bea12a8bf814d08533b54866fc83a659de029bfad922' // init code hash but without the '0x'
+                        hex'fc0d909b941a223f03a05103511f7b486aa41fc8e5fe699769e3e486b7da2f14' // init code hash but without the '0x'
                     )
                 )
             )
@@ -51,21 +51,23 @@ library UniswapV2Library {
     }
 
     // given an input amount of an asset and pair reserves, returns the maximum output amount of the other asset
-    function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) internal pure returns (uint amountOut) {
+    function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) internal view returns (uint amountOut) {
         require(amountIn > 0, 'UniswapV2Library: INSUFFICIENT_INPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');
-        uint amountInWithFee = amountIn.mul(997);
+        uint256 fees = IUniswapV2Router02(msg.sender).adminFee();
+        uint amountInWithFee = amountIn.mul(fees); //996 0.4%
         uint numerator = amountInWithFee.mul(reserveOut);
         uint denominator = reserveIn.mul(1000).add(amountInWithFee);
         amountOut = numerator / denominator;
     }
 
     // given an output amount of an asset and pair reserves, returns a required input amount of the other asset
-    function getAmountIn(uint amountOut, uint reserveIn, uint reserveOut) internal pure returns (uint amountIn) {
+    function getAmountIn(uint amountOut, uint reserveIn, uint reserveOut) internal view returns (uint amountIn) {
         require(amountOut > 0, 'UniswapV2Library: INSUFFICIENT_OUTPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');
+        uint256 fees = IUniswapV2Router02(msg.sender).adminFee();
         uint numerator = reserveIn.mul(amountOut).mul(1000);
-        uint denominator = reserveOut.sub(amountOut).mul(997);
+        uint denominator = reserveOut.sub(amountOut).mul(fees); //996 0.4%
         amountIn = (numerator / denominator).add(1);
     }
 
