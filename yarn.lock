@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@donkswap/core@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@donkswap/core/-/core-1.0.0.tgz"
-  integrity sha512-vj/ta/9iDNaUiLSsFqH9tR2lj3kdYSsprhYNrazvSXjBSWRYel0SYjxSoIK5/zrZU5nARDmnQDo+pADxqMEkDA==
+"@donkswap/core@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@donkswap/core/-/core-1.0.3.tgz"
+  integrity sha512-qdaaQhQ9yY6Dee9V/BHbgaTyOsikXLjVzCmrqVYaMsEG+mo4ve1lUKs8oOL8NjfHk6upoebYWampsmcGXRMgXQ==
 
 "@donkswap/lib@1.0.1":
   version "1.0.1"
