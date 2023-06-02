@@ -15,15 +15,17 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
 
     address public immutable override factory;
     address public immutable override WETH;
+    uint256 public adminFee;
 
     modifier ensure(uint deadline) {
         require(deadline >= block.timestamp, 'UniswapV2Router: EXPIRED');
         _;
     }
 
-    constructor(address _factory, address _WETH) public {
+    constructor(address _factory, address _WETH, uint256 _adminFee) public {
         factory = _factory;
         WETH = _WETH;
+        adminFee = _adminFee;
     }
 
     receive() external payable {
@@ -461,5 +463,13 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         address[] memory path
     ) public view virtual override returns (uint[] memory amounts) {
         return UniswapV2Library.getAmountsIn(factory, amountOut, path);
+    }
+
+    function getAdminFee() public view returns (uint256) {
+        return adminFee;
+    }
+
+    function setAdminFee(uint256 _adminFee) public returns (uint256) {
+        return adminFee = _adminFee;
     }
 }
