@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\will\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+  C:\Program Files\nodejs\node.exe C:\Users\will\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install --frozen-lockfile --production=false
 
 PATH: 
   C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\will\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Users\will\AppData\Local\Microsoft\WindowsApps;C:\Users\will\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\will\AppData\Roaming\npm;C:\Users\will\AppData\Roaming\nvm;C:\Program Files\nodejs
@@ -82,10 +82,10 @@ Lockfile:
   # yarn lockfile v1
   
   
-  "@donkswap/core@1.0.4":
-    version "1.0.4"
-    resolved "https://registry.npmjs.org/@donkswap/core/-/core-1.0.4.tgz"
-    integrity sha512-rdi7VxoGpwxpC1743/Jq1eXl9XckDC8QGBztC1JuL7c8tm3eBZpFmI/lPMA/YclZGkpMRxmoxWjKub17JYt4Ew==
+  "@donkswap/core@1.0.5":
+    version "1.0.5"
+    resolved "https://registry.npmjs.org/@donkswap/core/-/core-1.0.5.tgz"
+    integrity sha512-HANW994IIOxWqYg1Ekeq68L4KqKMQscM5fKSNMvKuW6UX74u2Nun0egYscRnJU7wUBbazKQliOaTw7UOs6ELLQ==
   
   "@donkswap/lib@1.0.1":
     version "1.0.1"
