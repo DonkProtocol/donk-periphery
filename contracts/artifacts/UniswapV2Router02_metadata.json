@@ -1127,11 +1127,11 @@
 			]
 		},
 		"libraries/UniswapV2Library.sol": {
-			"keccak256": "0xc9c12737005fffd7a863a8d1e7697e94d52f522bf8ac0b1de9752fd8c5de1ae4",
+			"keccak256": "0x08145c0dc58761ce1d7f590d6d77edac09a2ad506024790336894ac0c0c59b92",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://daab99c7020f8e82670394300e34b2622c33cc0435bf3278a4b09ae7ead741f4",
-				"dweb:/ipfs/Qmedo3vqj8bTwpxaa3ofgrm6E4pWKWdUqHFURPb2kgz5AW"
+				"bzz-raw://fea3d92fb65a64a1179a5a2f6d5672c39a500d73066b682bb46e2415604c6cce",
+				"dweb:/ipfs/Qma8DyjkUivCws9XjBgZXoyzv4DrHUGRJJnWCPcuPiueHh"
 			]
 		}
 	},
