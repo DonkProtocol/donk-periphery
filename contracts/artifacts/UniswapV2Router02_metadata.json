@@ -16,6 +16,11 @@
 						"internalType": "address",
 						"name": "_WETH",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_adminFee",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -154,12 +159,38 @@
 			},
 			{
 				"inputs": [],
+				"name": "adminFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "factory",
 				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAdminFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -658,6 +689,25 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_adminFee",
+						"type": "uint256"
+					}
+				],
+				"name": "setAdminFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "amountOut",
 						"type": "uint256"
 					},
@@ -990,7 +1040,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/UniswapV2Router02.sol": "UniswapV2Router02"
+			"UniswapV2Router02.sol": "UniswapV2Router02"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -999,20 +1049,20 @@
 		},
 		"optimizer": {
 			"enabled": true,
-			"runs": 1500
+			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"@oneverseswap/core/contracts/interfaces/IUniswapV2Factory.sol": {
-			"keccak256": "0xd98dc884ed987a17193a498f13a5fcfc5388f94609de025df008c8755c214c9c",
+		"@donkswap/core/contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0xcba5ce40eebd9b30b768f178acf1d76f9352db344c0a07cffb1269b521056893",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9a03e115f7fb1cba647abfd06341043738fca35d20c69f8d6fcbb57461c93c8e",
-				"dweb:/ipfs/QmUZ6XDDyDvdf3UiePa54cG8M9rk8VkgCfKVqCgFKX222k"
+				"bzz-raw://cc103ec954ea772930a5df65140108557118e9e8aead52f50a28fc1e6984edb8",
+				"dweb:/ipfs/QmY57RxTFEUowyExHvoQArVmQYkDHJLp5i9iammXNZRYug"
 			]
 		},
-		"@oneverseswap/core/contracts/interfaces/IUniswapV2Pair.sol": {
+		"@donkswap/core/contracts/interfaces/IUniswapV2Pair.sol": {
 			"keccak256": "0xc4f92f905a1e6ffe14efe8c096f111eb0d257298b2c429f3580306b96ebc5e33",
 			"license": "GPL-3.0",
 			"urls": [
@@ -1020,7 +1070,7 @@
 				"dweb:/ipfs/QmNZnV2JFn5Av8rh2QZRnvQ64jEQiD8n86y4qyFhnxmMot"
 			]
 		},
-		"@oneverseswap/lib/contracts/libraries/TransferHelper.sol": {
+		"@donkswap/lib/contracts/libraries/TransferHelper.sol": {
 			"keccak256": "0x09b394354f0d902a4654713d3920cfe58def5be2e77a0fed4bf940342d814ba5",
 			"license": "GPL-3.0-or-later",
 			"urls": [
@@ -1028,15 +1078,15 @@
 				"dweb:/ipfs/QmRn1zFJp1n72Vykf8qTx9zWFNeZfVwmmBNe12NgZ2gCQa"
 			]
 		},
-		"contracts/UniswapV2Router02.sol": {
-			"keccak256": "0x95ac8b789e8d439fc5311ed204c4f59e539fc71bfaf22b893bd85bfda1d8284b",
+		"UniswapV2Router02.sol": {
+			"keccak256": "0x99adbcab1f58bf4758bb4c9e0730cf41cff34f13380f88e87c0779168006bbc2",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f0693690e8b2b70ad2d9f0ab2f5f88f5437dbed4d2d5fab584defcfa4acae9b4",
-				"dweb:/ipfs/QmdC6qWMZiEeszo5vfQEqvvzJZeLJ6TaJ3mobpYdZQ1R2M"
+				"bzz-raw://db1e1d4e850c4f6caee4ec1a7003c3ff2e8909731daf43be0eb44be983edd96a",
+				"dweb:/ipfs/QmWbLeGXFq69jjMvGViDsUuqT9LSbcgt5X2TjVJkEMYh8e"
 			]
 		},
-		"contracts/interfaces/IERC20.sol": {
+		"interfaces/IERC20.sol": {
 			"keccak256": "0xab88c10c4ff62d2127126b65eae297b93bd1a7c8991e1380dc25e3605ce01811",
 			"license": "GPL-3.0",
 			"urls": [
@@ -1044,7 +1094,7 @@
 				"dweb:/ipfs/QmaDFsqBcBq3ZEaWFYu2BWCVDrRDDFeqJn8LTtQVdXsSH3"
 			]
 		},
-		"contracts/interfaces/IUniswapV2Router01.sol": {
+		"interfaces/IUniswapV2Router01.sol": {
 			"keccak256": "0x50a876d0e12cbdb3b9849e3d5b405700bf5464bc9f0d14655f900191885b5f92",
 			"license": "GPL-3.0",
 			"urls": [
@@ -1052,7 +1102,7 @@
 				"dweb:/ipfs/QmWTmkwpaGnSsMdERGLd2rjgSBoLVjGt6NnsY53WEWo7Pn"
 			]
 		},
-		"contracts/interfaces/IUniswapV2Router02.sol": {
+		"interfaces/IUniswapV2Router02.sol": {
 			"keccak256": "0x7582c8f224f56d94f92a7510c481d10a323cfbe30558c421fe611f4e4cf18860",
 			"license": "GPL-3.0",
 			"urls": [
@@ -1060,7 +1110,7 @@
 				"dweb:/ipfs/QmPNcDBDW8yh2JxGvm1ZugCFuzaNTNmM9KXdKLeeTFmRRi"
 			]
 		},
-		"contracts/interfaces/IWETH.sol": {
+		"interfaces/IWETH.sol": {
 			"keccak256": "0xabddb12b7f5972568ff55550038de66b9cd9ed4257e1e8db3a8c8a7447248bac",
 			"license": "GPL-3.0",
 			"urls": [
@@ -1068,7 +1118,7 @@
 				"dweb:/ipfs/QmTo5LVxpLPNoRoQC7oHvGbfRe699wuQk4nfyPNJAR51EZ"
 			]
 		},
-		"contracts/libraries/SafeMath.sol": {
+		"libraries/SafeMath.sol": {
 			"keccak256": "0xf04a5109c9205c67202d408fdf6ce80ec28fcd93702bdba158d88aae5a6573ad",
 			"license": "GPL-3.0",
 			"urls": [
@@ -1076,12 +1126,12 @@
 				"dweb:/ipfs/QmZFQ9oBd3DyZbzNf7eTesDxjNxyzpyPcxSC8w9RVRpNPM"
 			]
 		},
-		"contracts/libraries/UniswapV2Library.sol": {
-			"keccak256": "0x5d666060cbb483fc06006f4b848dfac87b9ae1c2cbac93f40fcb3b11fec91610",
+		"libraries/UniswapV2Library.sol": {
+			"keccak256": "0xc9c12737005fffd7a863a8d1e7697e94d52f522bf8ac0b1de9752fd8c5de1ae4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ee1f745cdfd8885f7d5f6ab1d15f3bff6ea448f5750f504ada083fdaa228c37d",
-				"dweb:/ipfs/QmNp1AZDLkKTDHmyJ3KG8f561NTKZJaJNHhNpZccBaqGS4"
+				"bzz-raw://daab99c7020f8e82670394300e34b2622c33cc0435bf3278a4b09ae7ead741f4",
+				"dweb:/ipfs/Qmedo3vqj8bTwpxaa3ofgrm6E4pWKWdUqHFURPb2kgz5AW"
 			]
 		}
 	},

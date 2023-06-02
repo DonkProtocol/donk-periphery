@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.6.12;
 
-import '@oneverseswap/core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@oneverseswap/lib/contracts/libraries/Babylonian.sol';
-import '@oneverseswap/lib/contracts/libraries/TransferHelper.sol';
+import '@donkswap/core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@donkswap/lib/contracts/libraries/Babylonian.sol';
+import '@donkswap/lib/contracts/libraries/TransferHelper.sol';
 
 import '../libraries/UniswapV2LiquidityMathLibrary.sol';
 import '../interfaces/IERC20.sol';
@@ -36,17 +36,19 @@ contract ExampleSwapToPrice {
         uint256 deadline
     ) public {
         // true price is expressed as a ratio, so both values must be non-zero
-        require(truePriceTokenA != 0 && truePriceTokenB != 0, "ExampleSwapToPrice: ZERO_PRICE");
+        require(truePriceTokenA != 0 && truePriceTokenB != 0, 'ExampleSwapToPrice: ZERO_PRICE');
         // caller can specify 0 for either if they wish to swap in only one direction, but not both
-        require(maxSpendTokenA != 0 || maxSpendTokenB != 0, "ExampleSwapToPrice: ZERO_SPEND");
+        require(maxSpendTokenA != 0 || maxSpendTokenB != 0, 'ExampleSwapToPrice: ZERO_SPEND');
 
         bool aToB;
         uint256 amountIn;
         {
             (uint256 reserveA, uint256 reserveB) = UniswapV2Library.getReserves(factory, tokenA, tokenB);
             (aToB, amountIn) = UniswapV2LiquidityMathLibrary.computeProfitMaximizingTrade(
-                truePriceTokenA, truePriceTokenB,
-                reserveA, reserveB
+                truePriceTokenA,
+                truePriceTokenB,
+                reserveA,
+                reserveB
             );
         }
 
