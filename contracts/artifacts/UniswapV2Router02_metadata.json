@@ -1055,11 +1055,11 @@
 	},
 	"sources": {
 		"@donkswap/core/contracts/interfaces/IUniswapV2Factory.sol": {
-			"keccak256": "0xcba5ce40eebd9b30b768f178acf1d76f9352db344c0a07cffb1269b521056893",
+			"keccak256": "0x7fa37c74aab205722f0e4b464cac092da49e24e839de1246fe68872f803b85d1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cc103ec954ea772930a5df65140108557118e9e8aead52f50a28fc1e6984edb8",
-				"dweb:/ipfs/QmY57RxTFEUowyExHvoQArVmQYkDHJLp5i9iammXNZRYug"
+				"bzz-raw://da191d60ad7148279b9139b5e5cf409de07a20892a9cb8ff721d3b729aa91c3f",
+				"dweb:/ipfs/QmQbjH5CcDs3fGaTPCV5dzaREgdVbhsYkruRtjuQGgGs9R"
 			]
 		},
 		"@donkswap/core/contracts/interfaces/IUniswapV2Pair.sol": {
@@ -1127,11 +1127,11 @@
 			]
 		},
 		"libraries/UniswapV2Library.sol": {
-			"keccak256": "0x83a5868c7afbf56d39ecce4381e5f24bd6f7554606856e391e833397178e3208",
+			"keccak256": "0x142177ded721ea9f6ca7e41ab9d9d80dc83737abc418fbd48b425a095208b73d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://800c55ddbba54ee77ec3081054a6fa9c9052a246d0fa11803f4d41e3b8be7fc8",
-				"dweb:/ipfs/QmSEHnzPsJF1FMiGeP3S5sMKrwDutbnACcM5xbydYKeSso"
+				"bzz-raw://912bf12015201072f11474e05a83307c6018a9c0847285985e57b8b1a28240cf",
+				"dweb:/ipfs/QmTdMH4Z2iFsqBSuWFrCXuSpHDjUJH62WAJCFvWj5vknNE"
 			]
 		}
 	},
