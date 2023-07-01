@@ -28,7 +28,7 @@ Trace:
 npm manifest: 
   {
     "name": "@donkswap/periphery",
-    "version": "1.0.26",
+    "version": "1.0.27",
     "description": "🎚 Peripheral smart contracts for interacting with the DONK exchanges",
     "engines": {
       "node": ">=10"
@@ -42,7 +42,7 @@ npm manifest:
       "contracts"
     ],
     "dependencies": {
-      "@donkswap/core": "1.0.18",
+      "@donkswap/core": "1.0.19",
       "@donkswap/lib": "1.0.1"
     },
     "devDependencies": {
@@ -82,10 +82,10 @@ Lockfile:
   # yarn lockfile v1
   
   
-  "@donkswap/core@1.0.18":
-    version "1.0.18"
-    resolved "https://registry.npmjs.org/@donkswap/core/-/core-1.0.18.tgz"
-    integrity sha512-KmEZTAp3m0wZ4NVXRWn/+RdXx7wap3odSrjbwXzlLGaoVXC0TB6XLMdz/WjL4MzulWojgtKv1Y9332lLh7/21g==
+  "@donkswap/core@1.0.19":
+    version "1.0.19"
+    resolved "https://registry.npmjs.org/@donkswap/core/-/core-1.0.19.tgz"
+    integrity sha512-rVXfNyAfY/OHG+xJ1E84b+BXZlSMxMADtNdREtg3xSwm2AwNw+PszYIuLYpRSidOuOqcA6+AssBVG4UqWHTESw==
     dependencies:
       web3 "^1.10.0"
   
