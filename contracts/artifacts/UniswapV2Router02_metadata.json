@@ -16,11 +16,6 @@
 						"internalType": "address",
 						"name": "_WETH",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_adminFee",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -159,38 +154,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "adminFee",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "factory",
 				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getAdminFee",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -689,25 +658,6 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_adminFee",
-						"type": "uint256"
-					}
-				],
-				"name": "setAdminFee",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
 						"name": "amountOut",
 						"type": "uint256"
 					},
@@ -1079,11 +1029,11 @@
 			]
 		},
 		"UniswapV2Router02.sol": {
-			"keccak256": "0x99adbcab1f58bf4758bb4c9e0730cf41cff34f13380f88e87c0779168006bbc2",
+			"keccak256": "0x72075d07a7f7ba55ef94ec7c1fe58c70a126889af99bcc5c1be42bec539ec123",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://db1e1d4e850c4f6caee4ec1a7003c3ff2e8909731daf43be0eb44be983edd96a",
-				"dweb:/ipfs/QmWbLeGXFq69jjMvGViDsUuqT9LSbcgt5X2TjVJkEMYh8e"
+				"bzz-raw://6c925b1b94122f3abe06b82f6c4863b9056094f038eed0a083092fe460d0c1ea",
+				"dweb:/ipfs/QmNqrPfNsFzMvY7wkTypLoQJRHHTPMH8rM1Svsv6LbpQnC"
 			]
 		},
 		"interfaces/IERC20.sol": {

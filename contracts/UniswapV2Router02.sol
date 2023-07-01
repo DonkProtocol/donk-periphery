@@ -10,22 +10,26 @@ import './libraries/SafeMath.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 
+import './interfaces/IUniswapV2Router02.sol';
+import './libraries/UniswapV2Library.sol';
+import './libraries/SafeMath.sol';
+import './interfaces/IERC20.sol';
+import './interfaces/IWETH.sol';
+
 contract UniswapV2Router02 is IUniswapV2Router02 {
     using SafeMath for uint;
 
     address public immutable override factory;
     address public immutable override WETH;
-    uint256 public adminFee;
 
     modifier ensure(uint deadline) {
         require(deadline >= block.timestamp, 'UniswapV2Router: EXPIRED');
         _;
     }
 
-    constructor(address _factory, address _WETH, uint256 _adminFee) public {
+    constructor(address _factory, address _WETH) public {
         factory = _factory;
         WETH = _WETH;
-        adminFee = _adminFee;
     }
 
     receive() external payable {
@@ -463,13 +467,5 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         address[] memory path
     ) public view virtual override returns (uint[] memory amounts) {
         return UniswapV2Library.getAmountsIn(factory, amountOut, path);
-    }
-
-    function getAdminFee() public view returns (uint256) {
-        return adminFee;
-    }
-
-    function setAdminFee(uint256 _adminFee) public returns (uint256) {
-        return adminFee = _adminFee;
     }
 }
