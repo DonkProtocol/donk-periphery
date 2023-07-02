@@ -1,6 +1,6 @@
 {
   "name": "@donkswap/periphery",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "description": "🎚 Peripheral smart contracts for interacting with the DONK exchanges",
   "engines": {
     "node": ">=10"
