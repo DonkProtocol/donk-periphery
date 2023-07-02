@@ -14,7 +14,7 @@
     "contracts"
   ],
   "dependencies": {
-    "@donkswap/core": "1.0.28",
+    "@donkswap/core": "1.0.29",
     "@donkswap/lib": "1.0.1"
   },
   "devDependencies": {
